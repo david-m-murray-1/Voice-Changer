@@ -5,9 +5,9 @@ Voice modulation to simulate a desired voice in real time.
    Changes a person's voice from a microphone recording to match another voice loaded via mp3 audio input
    1. Input an audio stream y1(t) that you want to match your voice to.
    2. Input a second audio stream x1(t) a 5 second recording via microphone.
-   3. Find the impulse response h1(t).
-   4. Flash an LED once the impulse response has been determined.
-   5. Talk into the microphone and convolve the microphone audio input x2(t) by impulse response h1(t) to produce
+   3. Signal Analysis (FFT --> smooth desired voice signal --> signal analysis of the 2 input signals --> IFFT)
+   4. Flash an LED once the transfer function has been determined.
+   5. Talk into the microphone and convolve the microphone audio input x2(t) by transfer function to produce
       audio output stream y2(t).
 */
 
